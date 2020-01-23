@@ -17,6 +17,7 @@
 .flex{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 /* background + wrapper style */
 .wrapper{
@@ -131,10 +132,16 @@ color: grey;
 font-size: 13px;
 }
 /* cerca */
-.search{
+.ricerca{
   height: 30px;
-  background-color: purple;
+  background-color: #F8F8F8;
 }
+.barra_ricerca{
+  width: 90%;
+  height:25px;
+  border-radius: 10px;
+}
+
 .lista_chat{
   width: 300px;
   height: calc(100% - 110px);
