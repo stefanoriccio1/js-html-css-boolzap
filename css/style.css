@@ -50,8 +50,6 @@
   width: 300px;
   height: calc(100% - 80px);
   background-color: coral;
-  overflow-x: hidden;
-  overflow-y: visible;
 }
 .navbar{
   width: 100%;
@@ -72,6 +70,20 @@
   background-color: black;
   width: calc(100% - 300px);
   height: 100%;
+}
+.notification{
+  height: 80px;
+  background-color: #9de1fe;
+}
+.search{
+  height: 30px;
+  background-color: purple;
+}
+.lista_chat{
+  width: 300px;
+  height: calc(100% - 110px);
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 /* main */
