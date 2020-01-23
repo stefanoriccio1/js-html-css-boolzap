@@ -29,11 +29,11 @@
 /* main container */
 .container{
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 85%;
-  height: 85%;
+  width: 90%;
+  height: 90%;
   background-color: yellow;
 }
 .float_left{
@@ -50,6 +50,8 @@
   width: 300px;
   height: calc(100% - 80px);
   background-color: coral;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 .navbar{
   width: 100%;
