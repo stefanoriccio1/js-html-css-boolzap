@@ -36,13 +36,53 @@
   height: 85%;
   background-color: yellow;
 }
-
+.float_left{
+  float: left;
+}
+.float_right{
+  float: right;
+}
 /* navbar ricerca conversazioni */
 .ricerca_mex{
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
-  height: 100%;
   width: 30%;
+  height: calc(100% - 200px);
   background-color: coral;
 }
+.navbar{
+  width: 100%;
+  height: 200px;
+  background-color: blue;
+  border: 10px solid red;
+}
+.navbar::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.sx{
+  background-color: red;
+  width: 30%;
+  height: 100%;
+}
+.dx{
+  background-color: black;
+  width: 70%;
+  height: 100%;
+}
+
+/* finestra di chat */
+/* .finestra_mex{
+  height: 100%;
+  background-color: pink;
+}
+.chat_footer{
+  position: fixed;
+  bottom: 0;
+  right:0;
+  height: 20%;
+  width: 70%;
+  background-color: brown;
+} */
