@@ -47,13 +47,13 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 630px;
-  height: calc(100% - 200px);
+  width: 300px;
+  height: calc(100% - 80px);
   background-color: coral;
 }
 .navbar{
   width: 100%;
-  height: 200px;
+  height: 80px;
   background-color: blue;
 }
 .navbar::after{
@@ -63,19 +63,34 @@
 }
 .sx{
   background-color: red;
-  width: 630px;
+  width: 300px;
   height: 100%;
 }
 .dx{
   background-color: black;
-  width: calc(100% - 630px);
+  width: calc(100% - 300px);
   height: 100%;
 }
 
 /* main */
-.main{
-  height: 100%;
-  width: calc(100% - 630px);
+.main_content{
+  height: calc(100% - 140px);
+  padding-left: 300px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  overflow-x: hidden;
+  overflow-y: visible;
+  background-color: lightblue;
+}
+
+/* footer_chat */
+.footer_chat{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 300px);
+  height: 60px;
+  background-color: lightgreen;
 }
 
 /* finestra di chat */
