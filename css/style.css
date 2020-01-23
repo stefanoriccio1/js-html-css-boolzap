@@ -7,7 +7,17 @@
 .body{
   background-color: black;
 }
-
+/* general */
+.float_left{
+  float: left;
+}
+.float_right{
+  float: right;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
 /* background + wrapper style */
 .wrapper{
   position: relative;
@@ -36,12 +46,7 @@
   height: 90%;
   background-color: yellow;
 }
-.float_left{
-  float: left;
-}
-.float_right{
-  float: right;
-}
+
 /* navbar ricerca conversazioni */
 .ricerca_mex{
   position: fixed;
@@ -62,9 +67,29 @@
   display: table;
 }
 .sx{
-  background-color: red;
+  background-color: #EDEDED;
   width: 300px;
   height: 100%;
+}
+.avatar{
+  height: 50px;
+  margin-left: 10px;
+}
+.menu ul{
+  margin-left: 95px;
+}
+.menu ul li{
+display: inline-block;
+margin-left: 20px;
+}
+.menu ul li a{
+  list-style: none;
+  text-decoration: none;
+  color: #5F5F5F;
+  font-size: 25px;
+}
+.menu ul li a:hover{
+  color: lightgrey;
 }
 .dx{
   background-color: black;
