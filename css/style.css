@@ -83,6 +83,7 @@
   left:0;
   width: 300px;
   height: 80px;
+  border-right: 1px solid lightgrey;
   background-color: #EDEDED;
 }
 .fist_bar::after{
@@ -159,7 +160,6 @@ font-size: 13px;
   overflow-x: hidden;
   overflow-y: visible;
 }
-
 /* lista messaggi */
 .lista_messaggi{
   flex-direction: column;
@@ -169,21 +169,26 @@ font-size: 13px;
 }
 .chatbox{
   flex-direction: row;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   width: 300px;
   height: 65px;
   background-color: white;
+}
+.info_utente{
+ margin-right: 100px;
+ margin-left: 20px;
 }
 .icona{
   height: 50px;
   border-radius: 50%;
 }
 .orario{
+  padding-bottom: 17px;
   font-size: 10px;
   color: #8C8C8C;
 }
 .preview{
-  margin-top: 5px;
+  margin-top: 3px;
   font-size: 13px;
   color: #8C8C8C;
 }
