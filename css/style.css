@@ -19,6 +19,12 @@
   align-items: center;
   justify-content: center;
 }
+.bold{
+  font-weight: bold;
+}
+.brd_grey{
+  border-bottom: 1px solid lightgrey;
+}
 /* background + wrapper style */
 .wrapper{
   position: relative;
@@ -131,6 +137,7 @@
 color: grey;
 font-size: 13px;
 }
+
 /* cerca */
 .ricerca{
   height: 30px;
@@ -149,6 +156,33 @@ font-size: 13px;
   overflow-y: visible;
 }
 
+/* lista messaggi */
+.lista_messaggi{
+  flex-direction: column;
+}
+.lista_messaggi li{
+  list-style: none;
+}
+.chatbox{
+  flex-direction: row;
+  justify-content: space-around;
+  width: 300px;
+  height: 65px;
+  background-color: white;
+}
+.icona{
+  height: 50px;
+  border-radius: 50%;
+}
+.orario{
+  font-size: 10px;
+  color: #8C8C8C;
+}
+.preview{
+  margin-top: 5px;
+  font-size: 13px;
+  color: #8C8C8C;
+}
 /* main */
 .main_content{
   height: calc(100% - 80px);
