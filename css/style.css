@@ -78,17 +78,19 @@
 .menu ul{
   margin-left: 95px;
 }
-.menu ul li{
+.menu ul li,
+.menu_chat ul li{
 display: inline-block;
 margin-left: 20px;
 }
-.menu ul li a{
+.menu ul li a,
+.menu_chat ul li a{
   list-style: none;
   text-decoration: none;
   color: #5F5F5F;
   font-size: 25px;
 }
-.menu ul li a:hover{
+.lista_icone li a:hover{
   color: lightgrey;
 }
 .dx{
@@ -99,6 +101,11 @@ margin-left: 20px;
   content: "";
   clear: both;
   display: table;
+}
+.menu_chat ul{
+  text-align: center;
+  margin-top: 25px;
+  margin-right: 20px;
 }
 .notification{
   height: 80px;
