@@ -89,14 +89,8 @@
 .avatar{
   height: 50px;
   margin-left: 10px;
-  margin-top: 15px;
+  margin-top: 13px;
 }
-.avatar::after{
-  content: "";
-  clear: both;
-  display: table;
-}
-
 .chat_data{
   width: 100%;
   height: 80px;
@@ -108,10 +102,35 @@
   clear: both;
   display: table;
 }
+/* notifiche */
+
 .notification{
   height: 80px;
   background-color: #9de1fe;
+  align-items: center;
+  justify-content: center;
 }
+.alert{
+  border-radius: 50%;
+  background-color: white;
+  padding:10px;
+}
+.alert a{
+  text-decoration: none;
+  color: #9de1fe;
+}
+.abilita{
+  margin-left: 15px;
+  line-height: 10px;
+}
+.abilita:first-child{
+  font-weight: bold;
+}
+.abilita p a{
+color: grey;
+font-size: 13px;
+}
+/* cerca */
 .search{
   height: 30px;
   background-color: purple;
