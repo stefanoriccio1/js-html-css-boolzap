@@ -202,7 +202,7 @@ font-size: 13px;
   overflow-y: visible;
   background-image: url(../img/mine.jpg);
 }
-.messaggio_utente{
+#messaggio_utente_template{
   width: 150px;
   margin-bottom: 5px;
   margin-left:calc(100% - 150px);
@@ -210,13 +210,13 @@ font-size: 13px;
   padding: 5px;
   background-color: #DCF8C6;
 }
-.messaggio_utente span,
-.messaggio_contatto span{
+#messaggio_utente_template span,
+#messaggio_contatto_template span{
   margin-left: 115px;
   font-size: 11px;
   color: #8C8C8C;
 }
-.messaggio_contatto{
+#messaggio_contatto_template{
   width: 150px;
   margin-bottom: 5px;
   border-radius: 5px;
