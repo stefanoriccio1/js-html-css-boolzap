@@ -210,33 +210,66 @@ display: flex;
 /* main */
 .main_content{
   height: calc(100% - 80px);
-  /* padding-left: 390px;
-  padding-right: 90px;
-  padding-bottom: 60px; */
   padding: 40px 90px 60px 390px;
   overflow-y: scroll;
   background-image: url(../img/mine.jpg);
 }
-#messaggio_utente_template{
-  width: 150px;
+.main_content.active {
+  display: block;
+}
+/* .messaggio_utente_template{
+  min-width: 40%;
+  max-width: 60%;
   margin-bottom: 5px;
   margin-left:calc(100% - 150px);
   border-radius: 5px;
   padding: 5px;
   background-color: #DCF8C6;
 }
-#messaggio_utente_template span,
-#messaggio_contatto_template span{
+.messaggio_utente_template span,
+.messaggio_contatto_template span{
   margin-left: 115px;
   font-size: 11px;
   color: #8C8C8C;
 }
-#messaggio_contatto_template{
-  width: 150px;
+.messaggio_contatto_template{
+  min-width: 40%;
+  max-width: 60%;
   margin-bottom: 5px;
   border-radius: 5px;
   padding: 5px;
   background-color: #FFFFFF;
+} */
+.messaggio {
+  min-width: 30%;
+  max-width: 60%;
+  padding: 5px;
+  margin: 10px;
+  font-size: 14px;
+  color: #8C8C8C;
+
+  border-radius: 5px;
+}
+.ora_messaggio{
+  font-size: 10px;
+}
+.messaggio_top {
+  display: flex;
+  justify-content: space-between;
+}
+.messaggio_bottom {
+  text-align: right;
+}
+.messaggio.inviato {
+  float: right;
+  clear: both;
+  background-color: #DCF8C6;
+}
+
+.messaggio.ricevuto {
+  float: left;
+  clear: both;
+  background: #FFFFFF;
 }
 
 /* footer_chat */

@@ -1,5 +1,5 @@
 $(document).ready (function(){
-  var messaggioUtente = $("#messaggio_utente_template");
+  var messaggioUtente = $(".messaggio_utente_template");
   var input = $("#input_messaggio");
   var data = new Date();
   var ora = data.getHours() + ":" + data.getMinutes();
