@@ -14,4 +14,7 @@ $(document).ready (function(){
   messaggioUtente.children('span').text(ora);
 })
 
+$(".lista_messaggi li").on("click", function(){
+  $(this).remove();
+})
 });

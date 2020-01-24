@@ -156,8 +156,7 @@ font-size: 13px;
 .lista_chat{
   width: 300px;
   height: calc(100% - 110px);
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow-y: scroll;
 }
 /* lista messaggi */
 .lista_messaggi{
@@ -168,7 +167,6 @@ font-size: 13px;
 }
 .chatbox{
   flex-direction: row;
-  /* justify-content: space-around; */
   width: 300px;
   height: 65px;
   background-color: white;
@@ -198,8 +196,7 @@ font-size: 13px;
   padding-right: 90px;
   padding-bottom: 60px; */
   padding: 40px 90px 60px 390px;
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow-y: scroll;
   background-image: url(../img/mine.jpg);
 }
 #messaggio_utente_template{
