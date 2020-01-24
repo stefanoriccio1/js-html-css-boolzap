@@ -65,7 +65,6 @@
   transform: translate(-50%, -50%);
   width: 90%;
   height: 90%;
-  background-color: yellow;
 }
 
 /* navbar ricerca conversazioni */
@@ -195,12 +194,34 @@ font-size: 13px;
 /* main */
 .main_content{
   height: calc(100% - 80px);
-  padding-left: 300px;
-  padding-right: 20px;
-  padding-bottom: 60px;
+  /* padding-left: 390px;
+  padding-right: 90px;
+  padding-bottom: 60px; */
+  padding: 40px 90px 60px 390px;
   overflow-x: hidden;
   overflow-y: visible;
   background-image: url(../img/mine.jpg);
+}
+.messaggio_utente{
+  width: 150px;
+  margin-bottom: 5px;
+  margin-left:calc(100% - 150px);
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #DCF8C6;
+}
+.messaggio_utente span,
+.messaggio_contatto span{
+  margin-left: 115px;
+  font-size: 11px;
+  color: #8C8C8C;
+}
+.messaggio_contatto{
+  width: 150px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #FFFFFF;
 }
 
 /* footer_chat */
