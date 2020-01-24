@@ -12,6 +12,6 @@ function sendMessage() {
   nuovoMessaggio.find(".testo_messaggio").text(input);
   nuovoMessaggio.find(".ora_messaggio").text('10:30');
   nuovoMessaggio.addClass('inviato');
-  $('main_content.active').append(nuovoMessaggio);
+  $('.main_content.active').append(nuovoMessaggio);
 }
 }
