@@ -24,6 +24,9 @@
 .bold{
   font-weight: bold;
 }
+.template {
+  display: none;
+}
 .brd_grey{
   border-bottom: 1px solid lightgrey;
 }
@@ -297,17 +300,3 @@ display: flex;
   font-size: 25px;
   color: #A1A6A8;
 }
-
-/* finestra di chat */
-/* .finestra_mex{
-  height: 100%;
-  background-color: pink;
-}
-.chat_footer{
-  position: fixed;
-  bottom: 0;
-  right:0;
-  height: 20%;
-  width: 70%;
-  background-color: brown;
-} */
