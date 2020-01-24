@@ -235,13 +235,13 @@ font-size: 13px;
   height: 60px;
   background-color: #F0F0F0;
 }
-.input_messaggio{
+#input_messaggio{
   width: 90%;
   height:40px;
   border-radius: 20px;
   border: 1px solid white;
 }
-.barra_ricerca_bottom{
+.barra_messaggio_bottom{
   flex-grow: 2;
   text-align: center;
 }
