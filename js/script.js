@@ -43,7 +43,7 @@ function selezioneChat(){
   mainContents.removeClass('active');
   $(mainContents[$(this).attr('data-contact')]).addClass('active');
 
-  // var icona = $('.avatar');
-  // $(this).attr()
-
+  var iconaDaCambiare = $('.avatar');
+  var iconaCorrente = $(this).find('img').attr('src');
+  iconaDaCambiare.attr('src', iconaCorrente);
   }
