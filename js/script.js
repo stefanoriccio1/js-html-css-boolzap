@@ -16,7 +16,7 @@ function sendMessage() {
     $('.main_content.active').append(nuovoMessaggio);
 
     $("#input_messaggio").val('');
-    risposta();
+    setTimeout(risposta, 2000);
   }
 
   function risposta(){
