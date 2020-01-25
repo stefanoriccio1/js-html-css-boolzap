@@ -46,4 +46,7 @@ function selezioneChat(){
   var iconaDaCambiare = $('.avatar');
   var iconaCorrente = $(this).find('img').attr('src');
   iconaDaCambiare.attr('src', iconaCorrente);
+
+  var nomeCorrente = $(this).find('p.bold').text();
+  $('.nome_utente_chat p.nome_utente').text(nomeCorrente);
   }
