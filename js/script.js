@@ -2,8 +2,14 @@ $(document).ready(function () {
   $('.icona_bottom.invio').click(function () {
     sendMessage();
   });
+  $("#input_messaggio").on('keypress', function(event){
+    if (event.which == 13){
+      sendMessage();
+    }
+  });
 });
 
+// funzioni
 function sendMessage() {
   var input = $("#input_messaggio").val();
   if (input.length != 0){
@@ -20,7 +26,6 @@ function sendMessage() {
   }
 
   function risposta(){
-    console.log('ciao');
     var messaggioDiRisposta = $('.template > .messaggio').clone();
     var data = new Date();
     var orario = data.getHours() + ':' + data.getMinutes();
