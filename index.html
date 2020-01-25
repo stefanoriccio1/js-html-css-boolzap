@@ -58,39 +58,40 @@
           </div>
           <div class= "lista_chat">
            <ul class="lista_messaggi flex">
-             <li>
+             <li data-contact="0">
                <div class="chatbox flex brd_grey;">
                   <div class="icona_chat">
                     <img class="icona" src="img/avatar_1.jpg" alt="avatar_1">
                   </div>
                   <div class="info_utente">
                     <p class="bold">Giacomo</p>
-                    <p class="preview">text preview</p>
+                    <p class="preview">Ehilà</p>
                   </div>
                   <div class="orario">
                     <p>17:23</p>
                   </div>
                </div>
              </li>
-             <li><div class="chatbox flex brd_grey;">
+             <li data-contact="1"><div class="chatbox flex brd_grey;">
                 <div class="icona_chat">
-                  <img class="icona" src="img/avatar_1.jpg" alt="avatar_1">
+                  <img class="icona" src="img/avatar_2.jpg" alt="avatar_1">
                 </div>
                 <div class="info_utente">
-                  <p class="bold">Giacomo</p>
-                  <p class="preview">text preview</p>
+                  <p class="bold">Antonio</p>
+                  <p class="preview">sì, grazie</p>
                 </div>
                 <div class="orario">
-                  <p>17:23</p>
+                  <p>18:23</p>
                 </div>
              </div></li>
-             <li><div class="chatbox flex brd_grey;">
+             <li data-contact="2">
+               <div class="chatbox flex brd_grey;">
                 <div class="icona_chat">
-                  <img class="icona" src="img/avatar_1.jpg" alt="avatar_1">
+                  <img class="icona" src="img/avatar_6.jpg" alt="avatar_1">
                 </div>
                 <div class="info_utente">
-                  <p class="bold">Giacomo</p>
-                  <p class="preview">text preview</p>
+                  <p class="bold">Giuditta</p>
+                  <p class="preview">tutto ok?</p>
                 </div>
                 <div class="orario">
                   <p>17:23</p>
@@ -102,8 +103,14 @@
         <!-- /navbar sx -->
         <!-- pagina messaggi -->
         <div class="chat_data">
-          <div class="icon_chat float_left">
-            <img class= "avatar" src="img/avatar_1.jpg" alt="Avatar">
+          <div class="dati_utente float_left flex">
+            <div class="icon_chat">
+              <img class= "avatar" src="img/avatar_1.jpg" alt="Avatar">
+            </div>
+            <div class= "nome_utente_chat">
+              <p class= "nome_utente bold">Giacomo</p><br>
+              <p class= "ultimo_accesso">Ultimo accesso oggi alle 14:56</p>
+            </div>
           </div>
           <div class="menu_chat float_right">
             <ul class= "lista_icone">
@@ -115,6 +122,46 @@
         </div>
         <!-- pagina di chat -->
         <div class="main_content active" data-contact="0">
+          <div class="messaggio inviato">
+            <div class="messaggio_top">
+              <p class="testo_messaggio">Ciao come stai?</p>
+              <i class="fa fa-chevron-down f-right message-options"></i>
+            </div>
+            <div class="messaggio_bottom">
+              <small class="ora_messaggio">10:40</small>
+            </div>
+          </div>
+          <div class="messaggio ricevuto">
+            <div class="messaggio_top">
+              <p class="testo_messaggio">Ciao come stai?</p>
+              <i class="fa fa-chevron-down f-right message-options"></i>
+            </div>
+            <div class="messaggio_bottom">
+              <small class="ora_messaggio">10:40</small>
+            </div>
+          </div>
+        </div>
+        <div class="main_content" data-contact="1">
+          <div class="messaggio inviato">
+            <div class="messaggio_top">
+              <p class="testo_messaggio">Sono Antonio</p>
+              <i class="fa fa-chevron-down f-right message-options"></i>
+            </div>
+            <div class="messaggio_bottom">
+              <small class="ora_messaggio">10:40</small>
+            </div>
+          </div>
+          <div class="messaggio ricevuto">
+            <div class="messaggio_top">
+              <p class="testo_messaggio">Ciao come stai?</p>
+              <i class="fa fa-chevron-down f-right message-options"></i>
+            </div>
+            <div class="messaggio_bottom">
+              <small class="ora_messaggio">10:40</small>
+            </div>
+          </div>
+        </div>
+        <div class="main_content" data-contact="2">
           <div class="messaggio inviato">
             <div class="messaggio_top">
               <p class="testo_messaggio">Ciao come stai?</p>

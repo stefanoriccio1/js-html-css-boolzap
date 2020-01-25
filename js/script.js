@@ -7,6 +7,7 @@ $(document).ready(function () {
       sendMessage();
     }
   });
+  $('.lista_chat li').click(selezioneChat);
 });
 
 // funzioni
@@ -35,3 +36,8 @@ function sendMessage() {
     $('.main_content.active').append(messaggioDiRisposta);
   }
 }
+
+function selezioneChat(){
+  $('.main_content').removeClass('active');
+
+  }

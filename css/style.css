@@ -115,6 +115,14 @@
   clear: both;
   display: table;
 }
+.nome_utente_chat{
+padding-left: 10px;
+padding-top: 15px;
+line-height: 10px;
+}
+.ultimo_accesso{
+  font-size: 12px;
+}
 /* notifiche */
 
 .notification{
@@ -214,12 +222,13 @@ display: flex;
 }
 /* main */
 .main_content{
+  display: none;
   height: calc(100% - 80px);
   padding: 40px 90px 60px 390px;
   overflow-y: scroll;
   background-image: url(../img/mine.jpg);
 }
-.main_content.active {
+.active {
   display: block;
 }
 /* .messaggio_utente_template{
