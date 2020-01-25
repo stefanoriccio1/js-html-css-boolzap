@@ -17,4 +17,14 @@ function sendMessage() {
 
     $("#input_messaggio").val('');
   }
+
+  function risposta(){
+    var messaggioDiRisposta = $('.template > .messaggio').clone();
+    var data = new Date();
+    var orario = data.getHours() + ':' + data.getMinutes();
+    messaggioDiRisposta.find('testo_messaggio').text('ok');
+    messaggioDiRisposta.find('ora_messaggio').text('orario');
+    $('main_content.active').append(messaggioDiRisposta);
+
+  }
 }
