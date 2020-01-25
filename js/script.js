@@ -16,15 +16,17 @@ function sendMessage() {
     $('.main_content.active').append(nuovoMessaggio);
 
     $("#input_messaggio").val('');
+    risposta();
   }
 
   function risposta(){
+    console.log('ciao');
     var messaggioDiRisposta = $('.template > .messaggio').clone();
     var data = new Date();
     var orario = data.getHours() + ':' + data.getMinutes();
-    messaggioDiRisposta.find('testo_messaggio').text('ok');
-    messaggioDiRisposta.find('ora_messaggio').text('orario');
-    $('main_content.active').append(messaggioDiRisposta);
-
+    messaggioDiRisposta.find('.testo_messaggio').text('ok');
+    messaggioDiRisposta.find('.ora_messaggio').text(orario);
+    messaggioDiRisposta.addClass('ricevuto');
+    $('.main_content.active').append(messaggioDiRisposta);
   }
 }
