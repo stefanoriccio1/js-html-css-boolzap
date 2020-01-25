@@ -38,6 +38,12 @@ function sendMessage() {
 }
 
 function selezioneChat(){
-  $('.main_content').removeClass('active');
+  var mainContents = $('.main_content');
+  // console.log(mainContents [0]);
+  mainContents.removeClass('active');
+  $(mainContents[$(this).attr('data-contact')]).addClass('active');
+
+  // var icona = $('.avatar');
+  // $(this).attr()
 
   }
