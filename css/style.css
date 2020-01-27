@@ -269,7 +269,10 @@ display: flex;
 }
 .menu_messaggio p{
   padding: 8px;
-  color: black;
+}
+.menu_messaggio p a{
+  text-decoration: none;
+    color: black;
 }
 .ora_messaggio{
   font-size: 10px;
