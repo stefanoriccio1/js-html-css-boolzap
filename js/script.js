@@ -24,7 +24,17 @@ $(document).ready(function () {
     })
   });
 
-  $('opzioni_messaggio').click()(function(){})
+  $('.opzioni_messaggio').click(function(){
+    console.log('ciao');
+    var finestraMessaggio = $(this).find('.menu_messaggio');
+
+    if(finestraMessaggio.hasClass('hidden')== true){
+      finestraMessaggio.removeClass('hidden');
+    }
+    else{
+      finestraMessaggio.addClass('hidden');
+    }
+  })
 });
 
 // funzioni

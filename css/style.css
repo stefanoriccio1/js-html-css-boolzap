@@ -265,7 +265,7 @@ display: flex;
   justify-content: center;
   box-shadow: 1px 1px 2px 2px;
   background-color: white;
-  transform: translate(-10%, 0);
+  transform: translate(-90%, 30%);
 }
 .menu_messaggio p{
   padding: 8px;
@@ -275,6 +275,7 @@ display: flex;
   font-size: 10px;
 }
 .messaggio_top {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
