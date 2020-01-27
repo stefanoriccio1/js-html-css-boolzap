@@ -85,17 +85,3 @@ function selezioneChat(){
   var nomeCorrente = $(this).find('p.bold').text();
   $('.nome_utente_chat p.nome_utente').text(nomeCorrente);
 };
-
-// funzione chiusura menu messaggio se clicco body
-
-$(document).on('click', 'body', function(){
-
-  var menuMessaggio = $('.menu_messaggio');
-
-  for (i = 0; i < menuMessaggio.length; i++) {
-    if(menuMessaggio.hasClass('hidden')== true){
-      console.log('false');
-    }
-  }
-
-});
