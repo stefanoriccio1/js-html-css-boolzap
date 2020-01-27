@@ -11,11 +11,9 @@ $(document).ready(function () {
 
   $('.barra_ricerca').keyup(function(){
     var testo = $('.barra_ricerca').val().toLowerCase();
-    console.log(testo);
 
     $('.info_utente').each(function(){
       var nomeDaTrovare = $(this).find('.bold').text().toLowerCase();
-      console.log(nomeDaTrovare);
 
       if(nomeDaTrovare.includes(testo) == true){
         $(this).parent().show();
