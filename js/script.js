@@ -8,6 +8,14 @@ $(document).ready(function () {
     }
   });
   $('.lista_chat li').click(selezioneChat);
+
+  $('.barra_ricerca').keyup(function(){
+    var testo = $('.barra_ricerca').val().toLowerCase();
+    var nomeDaTrovare = $(this).find('.info_utente > bold').text().toLowerCase();
+    if(nomeDaTrovare == testo)
+
+
+  })
 });
 
 // funzioni
@@ -30,7 +38,7 @@ function sendMessage() {
     var messaggioDiRisposta = $('.template > .messaggio').clone();
     var data = new Date();
     var orario = data.getHours() + ':' + data.getMinutes();
-    messaggioDiRisposta.find('.testo_messaggio').text('ok');
+    messaggioDiRisposta.find('.testo_messaggio').text('Ciao');
     messaggioDiRisposta.find('.ora_messaggio').text(orario);
     messaggioDiRisposta.addClass('ricevuto');
     $('.main_content.active').append(messaggioDiRisposta);
