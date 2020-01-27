@@ -7,9 +7,10 @@ $(document).ready(function () {
       sendMessage();
     }
   });
-  // funzione per trovare le chat corrispondenti ad un determinato utente
-  $('.lista_chat li').click(selezioneChat);
 
+// richiamo funzione cambio avatar utente
+  $('.lista_chat li').click(selezioneChat);
+// funzione per trovare le chat corrispondenti ad un determinato utente
   $('.barra_ricerca').keyup(function(){
     var testo = $('.barra_ricerca').val().toLowerCase();
 
@@ -38,7 +39,6 @@ $(document).ready(function () {
   });
   // funzione per elminare messaggio cliccando "cancella messaggio"
   $(document).on('click', '.cancella', function(){
-    console.log('ciao');
     $(this).parents()[2].remove();
   });
 });
@@ -85,3 +85,17 @@ function selezioneChat(){
   var nomeCorrente = $(this).find('p.bold').text();
   $('.nome_utente_chat p.nome_utente').text(nomeCorrente);
 };
+
+// funzione chiusura menu messaggio se clicco body
+
+$(document).on('click', 'body', function(){
+
+  var menuMessaggio = $('.menu_messaggio');
+
+  for (i = 0; i < menuMessaggio.length; i++) {
+    if(menuMessaggio.hasClass('hidden')== true){
+      console.log('false');
+    }
+  }
+
+});
