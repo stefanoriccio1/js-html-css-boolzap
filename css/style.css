@@ -24,8 +24,9 @@
 .bold{
   font-weight: bold;
 }
-.template {
-  display: none;
+
+.hidden{
+  display:none;
 }
 .brd_grey{
   border-bottom: 1px solid lightgrey;
@@ -243,6 +244,7 @@ display: flex;
 }
 
 .messaggio {
+  position: relative;
   min-width: 150px;
   max-width: 60%;
   padding: 5px;
@@ -251,6 +253,23 @@ display: flex;
   color: #8C8C8C;
 
   border-radius: 5px;
+}
+.opzioni_messaggio:hover{
+  cursor: pointer;
+}
+.menu_messaggio{
+  position: absolute;
+  width: 150px;
+  height: 70px;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 1px 1px 2px 2px;
+  background-color: white;
+  transform: translate(-10%, 0);
+}
+.menu_messaggio p{
+  padding: 8px;
+  color: black;
 }
 .ora_messaggio{
   font-size: 10px;

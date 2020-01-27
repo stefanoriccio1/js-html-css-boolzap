@@ -23,6 +23,8 @@ $(document).ready(function () {
       }
     })
   });
+
+  $('opzioni_messaggio').click()(function(){})
 });
 
 // funzioni
