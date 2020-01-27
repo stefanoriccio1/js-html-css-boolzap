@@ -25,7 +25,7 @@ $(document).ready(function () {
   });
 
   $(document).on('click', '.opzioni_messaggio', function(){
-    var finestraMessaggio = $(this).find('.menu_messaggio');
+    var finestraMessaggio = $(this).parent().find('.menu_messaggio');
 
     if(finestraMessaggio.hasClass('hidden')== true){
       finestraMessaggio.removeClass('hidden');
