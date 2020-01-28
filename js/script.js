@@ -50,7 +50,7 @@ $(document).ready(function () {
 });
 
 // funzioni
-// funzione di invio messaggio e del messaggio di rispota
+// funzione di invio messaggio
 function sendMessage() {
   var input = $("#input_messaggio").val();
   if (input.length != 0){
@@ -67,7 +67,7 @@ function sendMessage() {
 
     $("#input_messaggio").val('');
   };
-
+  // funzione del messaggio di risposta
   function risposta(){
     var messaggioDiRisposta = $('.template > .messaggio').clone();
     var data = new Date();
