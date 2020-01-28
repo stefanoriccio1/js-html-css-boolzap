@@ -41,6 +41,12 @@ $(document).ready(function () {
   $(document).on('click', '.cancella', function(){
     $(this).parents()[2].remove();
   });
+  // funzione per cambiare il bottone di invio messaggio
+  $('#input_messaggio').focus(function(){
+    $('.icona_bottom > i').removeClass('fas fa-microphone').addClass('fas fa-paper-plane');
+  }).blur(function(){
+    $('.icona_bottom > i').removeClass('fas fa-paper-plane').addClass('fas fa-microphone');
+  });
 });
 
 // funzioni
