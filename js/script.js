@@ -96,6 +96,6 @@ function selezioneChat(){
 };
 // funzione di scroll
 function scrollMessage() {
-  var heightContainer = $('.messaggio').height();
-  $('.main_content').scrollTop(1000);
+  var heightContainer = $('.main_content').height();
+  $('.main_content').scrollTop(heightContainer);
 }
