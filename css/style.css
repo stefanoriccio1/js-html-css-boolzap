@@ -243,7 +243,6 @@ display: flex;
 .active {
   display: block;
 }
-
 .messaggio {
   position: relative;
   min-width: 150px;
@@ -252,7 +251,6 @@ display: flex;
   margin: 10px;
   font-size: 14px;
   color: #8C8C8C;
-
   border-radius: 5px;
 }
 .opzioni_messaggio:hover{
@@ -268,6 +266,12 @@ display: flex;
   box-shadow: 1px 1px 2px 2px;
   background-color: white;
   z-index: 4;
+}
+.fa-chevron-down{
+  display: none;
+}
+.messaggio:hover .fa-chevron-down{
+  display: block;
 }
 .menu_messaggio p{
   padding: 8px;
