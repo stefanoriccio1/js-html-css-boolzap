@@ -324,3 +324,6 @@ display: flex;
   font-size: 25px;
   color: #A1A6A8;
 }
+.icona_bottom i:hover{
+  cursor: pointer;
+}
