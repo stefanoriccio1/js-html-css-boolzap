@@ -62,8 +62,10 @@ function sendMessage() {
     nuovoMessaggio.addClass('inviato');
     $('.main_content.active').append(nuovoMessaggio);
 
-    $("#input_messaggio").val('');
+    scrollMessage();
     setTimeout(risposta, 2000);
+
+    $("#input_messaggio").val('');
   };
 
   function risposta(){
@@ -92,3 +94,7 @@ function selezioneChat(){
   $('.nome_utente_chat p.nome_utente').text(nomeCorrente);
 };
 // funzione di scroll
+function scrollMessage() {
+  var heightContainer = $('.messaggio').height();
+  $('.main_content').scrollTop(heightContainer);
+}
