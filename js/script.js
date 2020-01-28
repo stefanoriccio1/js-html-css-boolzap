@@ -91,3 +91,4 @@ function selezioneChat(){
   var nomeCorrente = $(this).find('p.bold').text();
   $('.nome_utente_chat p.nome_utente').text(nomeCorrente);
 };
+// funzione di scroll
