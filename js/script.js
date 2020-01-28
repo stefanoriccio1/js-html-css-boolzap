@@ -63,7 +63,7 @@ function sendMessage() {
     $('.main_content.active').append(nuovoMessaggio);
 
     scrollMessage();
-    setTimeout(risposta, 2000);
+    setTimeout(risposta, 1000);
 
     $("#input_messaggio").val('');
   };
@@ -76,6 +76,7 @@ function sendMessage() {
     messaggioDiRisposta.find('.ora_messaggio').text(orario);
     messaggioDiRisposta.addClass('ricevuto');
     $('.main_content.active').append(messaggioDiRisposta);
+    scrollMessage()
   };
 }
 
@@ -96,5 +97,5 @@ function selezioneChat(){
 // funzione di scroll
 function scrollMessage() {
   var heightContainer = $('.messaggio').height();
-  $('.main_content').scrollTop(heightContainer);
+  $('.main_content').scrollTop(1000);
 }
